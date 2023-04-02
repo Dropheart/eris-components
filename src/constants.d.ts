@@ -2,6 +2,7 @@ export declare enum ComponentTypes {
     'ACTION_ROW' = 1,
     'BUTTON' = 2,
     'SELECT_MENU' = 3,
+    'MODAL_SUBMIT' = 5
 }
 export declare enum ButtonStyles {
     'blurple' = 1,

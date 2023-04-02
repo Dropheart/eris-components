@@ -58,6 +58,10 @@ function ErisComponentsClient(
             if (resBody.type === 2 && resBody) {
                 ErisClient.emit('slashCommandInteract', resBody);
             }
+            
+            if (resBody.type === 5 && resBody) {
+                ErisClient.emit('modalSubmit', resBody);
+            }
 
             if (!resBody.data.component_type) return;
 
